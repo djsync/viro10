@@ -47,16 +47,38 @@ ul.playlist_container li{
 }
 
 
-#contentdiv ul.playlist_container li p:last-child{
+#contentdiv ul.playlist_container li p:last-child:nth-of-type(3){
 	float: right;
 	width: 45%;
 	text-align: left;
 }
 
+#contentdiv ul.playlist_container li p:last-child:nth-of-type(4){
+	display: block;
+	float: none; 
+	width: 100%; 
+	text-align: center;
+	padding-left: 0px;
+	margin-top: 10px;
+}
+
 #contentdiv ul.playlist_container li p{
 	float: left; 
 	width: 45%;
-	text-align: right;
+	text-align: left;
+
+}
+
+#contentdiv ul.playlist_container li p:nth-of-type(2){
+	text-align: right; 
+	padding-left: 0px;
+}
+
+#contentdiv .playlist ul.playlist_container li p{
+	display: block;
+	font: none; 
+	width: 100%; 
+	text-align: center;
 }
 
 
