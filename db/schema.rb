@@ -13,14 +13,6 @@
 
 ActiveRecord::Schema.define(:version => 20131125214017) do
 
-  create_table "fluxes", :force => true do |t|
-    t.integer  "score",      :default => 0
-    t.datetime "created_at",                :null => false
-    t.datetime "updated_at",                :null => false
-    t.integer  "song_id"
-    t.integer  "party_id"
-  end
-
   create_table "parties", :force => true do |t|
     t.datetime "start_date"
     t.datetime "end_date"
@@ -32,11 +24,6 @@ ActiveRecord::Schema.define(:version => 20131125214017) do
     t.string   "party_type"
     t.text     "party_details"
     t.integer  "identifier"
-  end
-
-  create_table "playlists", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
   end
 
   create_table "songs", :force => true do |t|
