@@ -258,7 +258,7 @@
 #nav_container{
 	height: 50px; 
 	width: 100%;
-    margin-bottom: 20px;
+
 	background: #7d7e7d;
 	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzdkN2U3ZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwZTBlMGUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
 	background: -moz-linear-gradient(top, #7d7e7d 0%, #0e0e0e 100%);
@@ -280,7 +280,7 @@
 #nav > ul > li{float: left; position: relative;height: 50px; text-shadow: 2px 2px 1px #000;}
 #nav > ul > li:first-child{font-family: sourcecodeb; font-size: 30px; text-transform: uppercase; color: #007eff; height: 50px; line-height: 52px; margin: 0px 20px 0px 0px;}
 #nav > ul > li:first-child > span{color: #fff;}
-#nav > ul > li:last-child{float: right; }
+/*#nav > ul > li:last-child{float: right; }*/
 #nav > ul > li > a{background: none;height: 50px; line-height: 52px; font-size: 25px; color: #ccc; font-family: sourcecodexl; text-decoration: none; text-transform: uppercase; padding: 0px 20px; display: block;-moz-transition:.3s;-webkit-transition:.3s;-o-transition:.3s;transition:.3s;}
 #nav > ul > li:hover > a{color: #007eff;}
 #nav > ul > li > div{position: absolute; left: -100000px; z-index: 100;}
@@ -291,7 +291,7 @@
 #nav > ul > li > div ul li a{ display: block; font-family: sourcecoder; font-size: 20px; color: #eee; text-decoration: none; text-transform: uppercase;}
 #nav > ul > li > div ul li a:hover{color: #007eff; -moz-transition:.3s;-webkit-transition:.3s;-o-transition:.3s;transition:.3s;}
 
-#contentdiv{width: 980px; margin: 0px auto 0px auto; opacity: 0;}
+#contentdiv{width: 980px; margin: 0px auto 0px auto; opacity: 0; padding: 30px 0px 50px 0px; font-family: arial }
 
 .button{
     text-align: center;
@@ -362,6 +362,8 @@
     -webkit-transition:.3s;
     -o-transition:.3s;
     transition:.3s;
+    color: #0066cf;
+    text-shadow: 1px 1px 1px #000;
 }
 
 .party_header h1 span{ 
@@ -400,11 +402,28 @@
     font-weight: bold; 
 }
 
+.playlist{
+    font-family: arial; 
+}
+
+.library{
+    font-family: arial; 
+}
 
 .playlist h2{
 	font-family: cabinr;
 	font-size: 25px; 
 	margin: 10px 0px 10px 0px;
+        -moz-transition:.3s;
+    -webkit-transition:.3s;
+    -o-transition:.3s;
+    transition:.3s;
+}
+
+.library h2{
+    font-family: cabinr;
+    font-size: 25px; 
+    margin: 10px 0px 10px 0px;
         -moz-transition:.3s;
     -webkit-transition:.3s;
     -o-transition:.3s;
@@ -427,37 +446,38 @@
 
 .playlist_container{
 	margin: 0px 0px 20px 0px; 
-	background: #444; 
+
 	padding: 10px 0px 10px 0px; 
 	border-radius: 10px;
 }
 
 ul.playlist_container li{
 	display: block; 
-	background: #444;
 	width: 100%; 
 	-moz-box-sizing:border-box;
     -webkit-box-sizing:border-box;
     box-sizing:border-box;
 	padding: 5px 1%;
-
 	opacity: 0;
-        -moz-transition:.3s;
+    -moz-transition:.3s;
     -webkit-transition:.3s;
     -o-transition:.3s;
     transition:.3s;
 }
 
 ul.playlist_container li:nth-of-type(odd){
-	background: #333;
+	background: #ccc;
+    border-radius: 5px;
 }
 
 ul.playlist_container li p{
 	float: left; 
 	width: 20%;
     min-height: 10px;
-	color: #fff;
-	text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+	text-align: left;
 	font-family: arial; 
 	font-size: 20px; 
 	-moz-box-sizing:border-box;
@@ -473,12 +493,29 @@ ul.playlist_container li p:first-child{
 
 ul.playlist_container li p:last-child{
 	text-align: right;
+    float: right; 
 }
 
 ul.playlist_container li p a{
 	background: #666; 
 	line-height: 15px; 
 	padding: 1px 5px; 
+}
+
+ul.playlist_container li p:last-child:nth-of-type(4) span{
+    text-align: center;
+    padding: 5px;
+    background: #555;
+    color: #AAA;
+    line-height: 18px;
+    font-size: 14px;
+    text-decoration: none; 
+    text-transform: uppercase;
+    font-family: arial; 
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+    -o-transition:.3s;
+    transition:.3s;
 }
 
 .player{
@@ -488,17 +525,22 @@ ul.playlist_container li p a{
 .error{
     background-color:red;
     color:white;
-    border:1px solid black;
+    border-radius: 5px; 
     padding:5px;
     text-align:center;
     font-weight:bold;
+    font-family: arial; 
+    text-transform: uppercase;
 }
 
 #notice{
-    background-color:blue;
-    color:white;
+    background:#0066cf;
+    color:#fff;
     text-align:center;
     font-weight:bold;
+    text-transform: uppercase;
+    font-family: arial; 
+    border-radius: 5px;
     padding:5px;
 }
 
