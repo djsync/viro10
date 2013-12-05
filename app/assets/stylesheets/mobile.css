@@ -57,17 +57,11 @@ ul.playlist_container li{
 	display: block;
 	float: none; 
 	width: 100%; 
-	text-align: center;
+	text-align: right;
 	padding-left: 0px;
 	margin-top: 10px;
 }
 
-#contentdiv ul.playlist_container li p{
-	float: left; 
-	width: 45%;
-	text-align: left;
-
-}
 
 #contentdiv ul.playlist_container li p:nth-of-type(2){
 	text-align: right; 
@@ -77,8 +71,11 @@ ul.playlist_container li{
 #contentdiv .playlist ul.playlist_container li p{
 	display: block;
 	font: none; 
-	width: 100%; 
-	text-align: center;
+	width: 90%;
+	padding-left:5%;
+	padding-right: 5%;
+	text-align: left;
+	margin-bottom:3px;
 }
 
 
