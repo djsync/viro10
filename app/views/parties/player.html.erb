@@ -33,7 +33,7 @@
 
 Now Playing: <%= playlist.first.song_name %> by <%= playlist.first.song_artist %> <br/><br/>
 
-<audio controls autoplay>
+<audio controls autoplay style="display:block; margin-bottom:10px;">
   <source src="<%= playlist.first.song_location %>" type="audio/mpeg">
 </audio>
 
