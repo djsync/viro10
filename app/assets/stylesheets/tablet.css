@@ -1,6 +1,7 @@
 #contentdiv{
 	width: 100%; 
 	margin: 0px; 
+	padding-bottom: 50px; 
 }
 
 #nav{width: auto; }
@@ -26,3 +27,43 @@ ul.playlist_container li{
 	padding-left: 20px; 
 	padding-right: 20px;
 }
+
+
+/*forms*/
+
+.field label{
+	float: none;
+	width: 90%; 
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: left;
+}
+
+.field input{
+	float: none;
+	width: 90%; 
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: left;
+}
+
+.field .select{
+	width: 90%; 
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.field textarea{
+	width: 90%; 
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+
+
+
+
+
+
+
+
