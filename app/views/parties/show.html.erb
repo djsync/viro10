@@ -4,14 +4,14 @@
       <li>DJ<span>SYNC</span></li>
       <li><a href="/parties/<%=@party.id%>/">Setlist</a></li>
       <li><a href="/parties/<%=@party.id%>/library">Library</a></li>
-      <li><a href="">Party</a>
+      <!--<li><a href="">Party</a>
         <div>
           <ul>
             <li><a href="">Join Party</a></li>
             <li><a href="">Create Party</a></li>
           </ul>
         </div>
-      </li>
+      </li>-->
     </ul>
   </nav>
 </div>
@@ -57,7 +57,7 @@
                   <% if !session[:votes].include? f.id %>
                     <%= link_to 'Vote up!', :controller => 'songs', :action => 'vote_up', :id => f.id %>
                   <% else %>
-                    Voted up!
+                    <span>Voted up!</span> 
                   <% end %>
                 </p>
 
