@@ -79,6 +79,12 @@ ul.playlist_container li{
 }
 
 
+#contentdiv .library ul.playlist_container li p:last-of-type{
+	padding: 0px;
+	padding-left:0px;
+	padding-right:0px;
+}
+
 
 
 
