@@ -39,6 +39,10 @@ ul.playlist_container li{
 	padding: 10px 0px
 }
 
+#contentdiv ul.playlist_container li p{
+	font-size: 15px;
+}
+
 #contentdiv ul.playlist_container li p:first-child{
 	float: none;
 	width: 100%;
@@ -81,7 +85,7 @@ ul.playlist_container li{
 	padding-right: 5%;
 	text-align: left;
 	margin-bottom:3px;
-	font-size: 15px;
+	
 }
 
 
